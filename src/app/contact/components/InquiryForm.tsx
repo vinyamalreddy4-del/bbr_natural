@@ -62,7 +62,7 @@ Message: ${form.message}`;
             For faster response, WhatsApp us directly:
           </p>
           <a
-            href={`https://wa.me/919876543210?text=${encodeURIComponent(whatsappMsg)}`}
+            href={`https://wa.me/918978385957?text=${encodeURIComponent(whatsappMsg)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="whatsapp-btn text-sm"
@@ -250,7 +250,7 @@ Message: ${form.message}`;
                   )}
                 </button>
                 <a
-                  href={`https://wa.me/919876543210?text=${encodeURIComponent(whatsappMsg)}`}
+                  href={`https://wa.me/918978385957?text=${encodeURIComponent(whatsappMsg)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 whatsapp-btn justify-center text-sm"

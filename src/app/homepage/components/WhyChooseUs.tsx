@@ -20,7 +20,7 @@ const pillars = [
 {
   icon: '🌾',
   title: 'Direct Farm Sourcing',
-  desc: 'We work directly with farmers in Guntur, Kurnool, and Nizamabad — ensuring traceability and freshness.',
+  desc: 'We work directly with farmers in Karimnagar, Nizamabad, and Kurnool — ensuring traceability and freshness from Rangapur Village to your doorstep.',
   stat: '100%',
   statLabel: 'Farm Direct'
 },
@@ -88,9 +88,9 @@ export default function WhyChooseUs() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6">
                   <p className="font-serif text-xl italic text-white leading-snug">
-                    "The same oil my grandmother made — now available for every family."
+                    &ldquo;Named in honour of our grandfather Baikadi Rajireddy — his values of purity and tradition guide every drop we press.&rdquo;
                   </p>
-                  <p className="text-xs text-white/70 mt-2 font-semibold tracking-wider uppercase">— Rajireddy, Founder</p>
+                  <p className="text-xs text-white/70 mt-2 font-semibold tracking-wider uppercase">— Madhu, Bharath &amp; Bhagavan Reddy, Founders</p>
                 </div>
               </div>
             </div>

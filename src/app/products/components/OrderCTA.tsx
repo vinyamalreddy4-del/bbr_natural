@@ -34,7 +34,7 @@ export default function OrderCTA() {
 
         <div className="flex flex-col sm:flex-row gap-4 mt-4">
           <a
-            href="https://wa.me/919876543210?text=Hi%20BBR%20Natural%2C%20I%20want%20to%20order"
+            href="https://wa.me/918978385957?text=Hi%20BBR%20Natural%2C%20I%20want%20to%20order"
             target="_blank"
             rel="noopener noreferrer"
             className="whatsapp-btn text-base"

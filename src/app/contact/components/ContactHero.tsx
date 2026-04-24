@@ -14,7 +14,7 @@ export default function ContactHero() {
         </p>
         <div className="flex flex-wrap justify-center gap-4 mt-8">
           <a
-            href="https://wa.me/919876543210?text=Hi%20BBR%20Natural%2C%20I%20have%20an%20inquiry"
+            href="https://wa.me/918978385957?text=Hi%20BBR%20Natural%2C%20I%20have%20an%20inquiry"
             target="_blank"
             rel="noopener noreferrer"
             className="whatsapp-btn text-sm"
@@ -26,7 +26,7 @@ export default function ContactHero() {
             WhatsApp Us
           </a>
           <a
-            href="tel:+919876543210"
+            href="tel:+918978385957"
             className="flex items-center gap-2 text-sm font-semibold text-primary border-2 border-primary/30 rounded-full px-6 py-3 hover:bg-primary/5 transition-all"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">

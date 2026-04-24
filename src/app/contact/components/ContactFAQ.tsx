@@ -5,10 +5,10 @@ import Icon from '@/components/ui/AppIcon';
 const faqs = [
   {
     q: 'How do I place an order?',
-    a: 'The easiest way is to WhatsApp us at +91 98765 43210 with the product name, size, and your delivery address. We confirm within 2–4 hours and pack fresh for you.',
+    a: 'The easiest way is to WhatsApp us at +91 89783 85957 with the product name, size, and your delivery address. We confirm within 2–4 hours and pack fresh for you.',
   },
   {
-    q: 'Do you deliver outside Andhra Pradesh?',
+    q: 'Do you deliver outside Telangana?',
     a: 'Yes! We ship pan-India via courier services. Delivery typically takes 3–5 business days depending on your location. Shipping charges are calculated based on weight and destination.',
   },
   {
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: 'What payment methods do you accept?',
-    a: 'We accept UPI (GPay, PhonePe, Paytm), bank transfer, and cash on delivery for local orders within Guntur district. For outstation orders, advance payment via UPI is required.',
+    a: 'We accept UPI (GPay, PhonePe, Paytm), bank transfer, and cash on delivery for local orders within Karimnagar district. For outstation orders, advance payment via UPI is required.',
   },
 ];
 
@@ -51,7 +51,7 @@ export default function ContactFAQ() {
               Can&apos;t find your answer? WhatsApp us directly — we&apos;re always happy to help.
             </p>
             <a
-              href="https://wa.me/919876543210?text=Hi%20BBR%20Natural%2C%20I%20have%20a%20question"
+              href="https://wa.me/918978385957?text=Hi%20BBR%20Natural%2C%20I%20have%20a%20question"
               target="_blank"
               rel="noopener noreferrer"
               className="whatsapp-btn text-sm w-fit"
