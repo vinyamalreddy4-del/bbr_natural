@@ -41,13 +41,13 @@ export default function CTABanner() {
                 <span className="italic text-accent">real difference?</span>
               </h2>
               <p className="text-primary-foreground/80 text-sm sm:text-base leading-relaxed">
-                Order fresh-pressed oils and spices directly from BBR Natural. WhatsApp us your requirement and we&apos;ll deliver within 2 days.
+                Order fresh-pressed oils and spices directly from BRR Natural. WhatsApp us your requirement and we&apos;ll deliver within 2 days.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row lg:flex-col gap-3 w-full sm:w-auto lg:min-w-[200px]">
               <a
-                href="https://wa.me/918978385957?text=Hi%20BBR%20Natural%2C%20I%20want%20to%20place%20an%20order"
+                href="https://wa.me/918978385957?text=Hi%20BRR%20Natural%2C%20I%20want%20to%20place%20an%20order"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="whatsapp-btn justify-center text-sm">

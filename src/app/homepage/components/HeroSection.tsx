@@ -75,13 +75,13 @@ export default function HeroSection() {
             </h1>
 
             <p className="text-base sm:text-lg text-muted-foreground font-light leading-relaxed max-w-lg animate-fade-slide-up delay-300">
-              BBR — Baikadi Rajireddy Natural brings you oils extracted the ancient wooden chekku way — no heat, no chemicals, just pure goodness from Rangapur Village, Karimnagar to your kitchen.
+              BRR — Baikadi Rajireddy Natural brings you oils extracted the ancient wooden chekku way — no heat, no chemicals, just pure goodness from Rangapur Village, Karimnagar to your kitchen.
             </p>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-slide-up delay-400">
               <a
-                href="https://wa.me/918978385957?text=Hi%20BBR%20Natural%2C%20I%20want%20to%20order"
+                href="https://wa.me/918978385957?text=Hi%20BRR%20Natural%2C%20I%20want%20to%20order"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="whatsapp-btn text-base justify-center sm:justify-start">

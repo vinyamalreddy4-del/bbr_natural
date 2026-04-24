@@ -9,7 +9,7 @@ export default function OrderCTA() {
         <span className="text-xs font-bold tracking-[0.35em] uppercase text-accent">Order Now</span>
         <h2 className="font-serif text-[clamp(2rem,5vw,3.5rem)] font-light tracking-tight leading-tight">
           How to Order<br />
-          <span className="italic text-primary">from BBR Natural</span>
+          <span className="italic text-primary">from BRR Natural</span>
         </h2>
         <p className="text-base text-muted-foreground leading-relaxed max-w-md">
           No complicated checkout. Just WhatsApp us your order and we&apos;ll confirm, pack fresh, and deliver.
@@ -34,7 +34,7 @@ export default function OrderCTA() {
 
         <div className="flex flex-col sm:flex-row gap-4 mt-4">
           <a
-            href="https://wa.me/918978385957?text=Hi%20BBR%20Natural%2C%20I%20want%20to%20order"
+            href="https://wa.me/918978385957?text=Hi%20BRR%20Natural%2C%20I%20want%20to%20order"
             target="_blank"
             rel="noopener noreferrer"
             className="whatsapp-btn text-base"

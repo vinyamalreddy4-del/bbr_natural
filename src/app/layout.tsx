@@ -24,14 +24,14 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
-  title: 'BBR Natural — Baikadi Rajireddy Natural | Pure Cold Pressed Oils & Spices',
-  description: 'BBR — Baikadi Rajireddy Natural offers chemical-free cold pressed groundnut and sesame oils, chilli powder, and turmeric — made the traditional wooden chekku way, from Rangapur Village, Karimnagar, Telangana.',
+  title: 'BRR Natural — Baikadi Rajireddy Natural | Pure Cold Pressed Oils & Spices',
+  description: 'BRR — Baikadi Rajireddy Natural offers chemical-free cold pressed groundnut and sesame oils, chilli powder, and turmeric — made the traditional wooden chekku way, from Rangapur Village, Karimnagar, Telangana.',
   icons: {
     icon: [{ url: '/favicon.ico', type: 'image/x-icon' }],
   },
   openGraph: {
-    title: 'BBR Natural — Baikadi Rajireddy Natural | Pure Cold Pressed Oils & Spices',
-    description: 'Traditional wooden chekku cold pressed oils and natural spices from BBR — Baikadi Rajireddy Natural, Karimnagar, Telangana.',
+    title: 'BRR Natural — Baikadi Rajireddy Natural | Pure Cold Pressed Oils & Spices',
+    description: 'Traditional wooden chekku cold pressed oils and natural spices from BRR — Baikadi Rajireddy Natural, Karimnagar, Telangana.',
     images: [{ url: '/assets/images/app_logo.png', width: 1200, height: 630 }],
   },
 };

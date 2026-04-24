@@ -40,7 +40,7 @@ export default function InquiryForm() {
     }, 1200);
   };
 
-  const whatsappMsg = `Hi BBR Natural, I want to inquire about:
+  const whatsappMsg = `Hi BRR Natural, I want to inquire about:
 Product: ${form.product || 'Not specified'}
 Quantity: ${form.quantity || 'Not specified'}
 Name: ${form.name}

@@ -7,7 +7,7 @@ const testimonials = [
 {
   name: 'Lakshmi Devi',
   role: 'Homemaker, Vijayawada',
-  quote: 'I switched to BBR groundnut oil 6 months ago. The difference in taste is remarkable — my family noticed immediately. My daughter\'s skin has improved too!',
+  quote: 'I switched to BRR groundnut oil 6 months ago. The difference in taste is remarkable — my family noticed immediately. My daughter\'s skin has improved too!',
   rating: 5,
   image: "https://img.rocket.new/generatedImages/rocket_gen_img_12ea42ac5-1772258592389.png",
   imageAlt: 'Indian woman smiling in a kitchen, warm natural lighting, traditional home setting',
@@ -16,7 +16,7 @@ const testimonials = [
 {
   name: 'Venkata Ramana',
   role: 'Doctor, Guntur',
-  quote: 'As a physician, I recommend cold pressed oils to my patients. BBR Natural is the only brand I trust locally — genuine cold pressed, no adulteration.',
+  quote: 'As a physician, I recommend cold pressed oils to my patients. BRR Natural is the only brand I trust locally — genuine cold pressed, no adulteration.',
   rating: 5,
   image: "https://img.rocket.new/generatedImages/rocket_gen_img_19f0fd5cb-1763295525028.png",
   imageAlt: 'Indian man in professional attire, confident expression, clean background',
@@ -34,7 +34,7 @@ const testimonials = [
 {
   name: 'Suresh Babu',
   role: 'Restaurant Owner, Nellore',
-  quote: 'I use BBR sesame oil in my restaurant. Customers keep asking what makes the food taste different. The answer is always the same — real cold pressed oil.',
+  quote: 'I use BRR sesame oil in my restaurant. Customers keep asking what makes the food taste different. The answer is always the same — real cold pressed oil.',
   rating: 5,
   image: "https://img.rocket.new/generatedImages/rocket_gen_img_138e07571-1763295086046.png",
   imageAlt: 'Indian businessman smiling, casual professional attire, warm indoor lighting',
@@ -43,7 +43,7 @@ const testimonials = [
 {
   name: 'Padma Rao',
   role: 'Nutritionist, Visakhapatnam',
-  quote: 'BBR Natural\'s chilli powder has no added color — you can see the natural red. Genuinely pure. I recommend it to all my clients who cook Andhra food.',
+  quote: 'BRR Natural\'s chilli powder has no added color — you can see the natural red. Genuinely pure. I recommend it to all my clients who cook Andhra food.',
   rating: 5,
   image: "https://img.rocket.new/generatedImages/rocket_gen_img_1524059f7-1763300494995.png",
   imageAlt: 'Indian woman professional, confident smile, clean studio background',

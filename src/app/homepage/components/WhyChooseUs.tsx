@@ -66,7 +66,7 @@ export default function WhyChooseUs() {
               className="why-reveal"
               style={{ opacity: 0, transform: 'translateY(30px)', transition: 'opacity 0.8s ease, transform 0.8s ease' }}>
 
-              <span className="text-xs font-bold tracking-[0.35em] uppercase text-accent block mb-3">Why BBR Natural</span>
+              <span className="text-xs font-bold tracking-[0.35em] uppercase text-accent block mb-3">Why BRR Natural</span>
               <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] font-light tracking-tight leading-tight">
                 The Difference You Can<br />
                 <span className="italic text-primary">Taste & Trust</span>
@@ -141,7 +141,7 @@ export default function WhyChooseUs() {
 
               <div className="grid grid-cols-3 text-center text-xs font-bold tracking-wider uppercase bg-muted border-b border-border">
                 <div className="py-3 px-3 text-muted-foreground">Feature</div>
-                <div className="py-3 px-3 text-primary border-x border-border bg-primary/5">BBR Natural</div>
+                <div className="py-3 px-3 text-primary border-x border-border bg-primary/5">BRR Natural</div>
                 <div className="py-3 px-3 text-muted-foreground">Commercial Oil</div>
               </div>
               {[

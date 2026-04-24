@@ -14,7 +14,7 @@ export default function ContactHero() {
         </p>
         <div className="flex flex-wrap justify-center gap-4 mt-8">
           <a
-            href="https://wa.me/918978385957?text=Hi%20BBR%20Natural%2C%20I%20have%20an%20inquiry"
+            href="https://wa.me/918978385957?text=Hi%20BRR%20Natural%2C%20I%20have%20an%20inquiry"
             target="_blank"
             rel="noopener noreferrer"
             className="whatsapp-btn text-sm"

@@ -44,7 +44,7 @@ export default function Header() {
             <AppLogo size={40} />
             <div className="flex flex-col">
               <span className="font-serif text-lg font-medium text-primary leading-tight tracking-tight">
-                BBR Natural
+                BRR Natural
               </span>
               <span className="text-[10px] font-semibold tracking-[0.18em] uppercase text-accent leading-none">
                 Baikadi Rajireddy Natural
@@ -76,7 +76,7 @@ export default function Header() {
               Call Now
             </a>
             <a
-              href="https://wa.me/918978385957?text=Hi%20BBR%20Natural%2C%20I%20want%20to%20order"
+              href="https://wa.me/918978385957?text=Hi%20BRR%20Natural%2C%20I%20want%20to%20order"
               target="_blank"
               rel="noopener noreferrer"
               className="whatsapp-btn text-sm"
@@ -114,7 +114,7 @@ export default function Header() {
         <div className="flex items-center justify-between p-5 border-b border-border">
           <div className="flex items-center gap-3">
             <AppLogo size={36} />
-            <span className="font-serif text-base font-medium text-primary">BBR Natural</span>
+            <span className="font-serif text-base font-medium text-primary">BRR Natural</span>
           </div>
           <button
             className="p-2 rounded-lg hover:bg-muted transition-colors"
@@ -138,7 +138,7 @@ export default function Header() {
         </nav>
         <div className="px-6 flex flex-col gap-3 mt-4">
           <a
-            href="https://wa.me/918978385957?text=Hi%20BBR%20Natural%2C%20I%20want%20to%20order"
+            href="https://wa.me/918978385957?text=Hi%20BRR%20Natural%2C%20I%20want%20to%20order"
             target="_blank"
             rel="noopener noreferrer"
             className="whatsapp-btn justify-center text-sm"
