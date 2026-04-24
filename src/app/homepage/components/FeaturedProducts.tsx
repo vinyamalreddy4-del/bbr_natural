@@ -177,7 +177,7 @@ export default function FeaturedProducts() {
                 </div>
 
                 <a
-                href={`https://wa.me/919876543210?text=Hi%20BBR%20Natural%2C%20I%20want%20to%20order%20${encodeURIComponent(product.name)}`}
+                href={`https://wa.me/918978385957?text=Hi%20BRR%20Natural%2C%20I%20want%20to%20order%20${encodeURIComponent(product.name)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-1 w-full flex items-center justify-center gap-2 bg-primary text-primary-foreground font-semibold text-sm rounded-full py-2.5 hover:bg-primary/90 transition-all">

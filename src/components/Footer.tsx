@@ -14,7 +14,7 @@ export default function Footer() {
             <Link href="/homepage" className="flex items-center gap-3">
               <AppLogo size={40} />
               <div className="flex flex-col">
-                <span className="font-serif text-lg font-medium text-primary leading-tight">BBR Natural</span>
+                <span className="font-serif text-lg font-medium text-primary leading-tight">BRR Natural</span>
                 <span className="text-[10px] font-semibold tracking-[0.18em] uppercase text-accent">Pure & Traditional</span>
               </div>
             </Link>
@@ -23,7 +23,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-3">
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/918978385957"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors"
@@ -35,7 +35,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="tel:+919876543210"
+                href="tel:+918978385957"
                 className="w-9 h-9 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors"
                 aria-label="Phone"
               >
@@ -69,7 +69,7 @@ export default function Footer() {
         {/* Bottom row */}
         <div className="mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-sm text-muted-foreground">
-            © 2026 BBR Natural (Baikadi Rajireddy Natural). All rights reserved.
+            © 2026 BRR Natural (Baikadi Rajireddy Natural). All rights reserved.
           </p>
           <div className="flex items-center gap-4 text-sm text-muted-foreground">
             <Link href="/contact" className="hover:text-primary transition-colors font-medium">Privacy Policy</Link>

@@ -40,7 +40,7 @@ export default function InquiryForm() {
     }, 1200);
   };
 
-  const whatsappMsg = `Hi BBR Natural, I want to inquire about:
+  const whatsappMsg = `Hi BRR Natural, I want to inquire about:
 Product: ${form.product || 'Not specified'}
 Quantity: ${form.quantity || 'Not specified'}
 Name: ${form.name}
@@ -154,7 +154,7 @@ Message: ${form.message}`;
                     required
                     value={form.phone}
                     onChange={handleChange}
-                    placeholder="+91 98765 43210"
+                    placeholder="+91 89783 95957"
                     className="w-full px-4 py-3 rounded-xl border border-input bg-background text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition-all"
                   />
                 </div>

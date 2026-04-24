@@ -28,7 +28,11 @@ const AppLogo = memo(function AppLogo({
   }, [onClick, className]);
 
   return (
-    <div className={containerClassName} onClick={onClick}>
+    <div 
+      className={containerClassName} 
+      onClick={onClick}
+      style={{ width: size, height: size }}
+    >
       {/* Show image if src provided, otherwise show icon */}
       {src ? (
         <AppImage
@@ -36,7 +40,7 @@ const AppLogo = memo(function AppLogo({
           alt="Logo" 
           width={size}
           height={size}
-          className="flex-shrink-0"
+          className="flex-shrink-0 object-contain"
           priority={true}
           unoptimized={src.endsWith('.svg')}
         />

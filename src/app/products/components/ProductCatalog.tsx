@@ -319,7 +319,7 @@ export default function ProductCatalog() {
                 {/* CTA */}
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a
-                    href={`https://wa.me/919876543210?text=Hi%20BBR%20Natural%2C%20I%20want%20to%20order%20${encodeURIComponent(active.name)}%20(${encodeURIComponent(active.sizes[sizeIdx].label)})%20-%20%E2%82%B9${active.sizes[sizeIdx].price}`}
+                    href={`https://wa.me/918978385957?text=Hi%20BRR%20Natural%2C%20I%20want%20to%20order%20${encodeURIComponent(active.name)}%20(${encodeURIComponent(active.sizes[sizeIdx].label)})%20-%20%E2%82%B9${active.sizes[sizeIdx].price}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="whatsapp-btn flex-1 justify-center text-sm">
@@ -331,7 +331,7 @@ export default function ProductCatalog() {
                     Order {active.sizes[sizeIdx].label} for ₹{active.sizes[sizeIdx].price}
                   </a>
                   <a
-                    href="tel:+919876543210"
+                    href="tel:+918978385957"
                     className="flex items-center justify-center gap-2 text-sm font-semibold text-primary border-2 border-primary/30 rounded-full px-5 py-3 hover:bg-primary/5 transition-all">
 
                     <Icon name="PhoneIcon" size={15} variant="solid" />

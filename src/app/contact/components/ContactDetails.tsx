@@ -5,25 +5,25 @@ const contactItems = [
   {
     icon: 'PhoneIcon',
     label: 'Phone / WhatsApp',
-    value: '+91 98765 43210',
+    value: '+91 89783 95957',
     sub: 'Mon–Sat, 8am–8pm IST',
-    href: 'tel:+919876543210',
+    href: 'tel:+918978385957',
     color: 'bg-primary/10 text-primary',
   },
   {
     icon: 'EnvelopeIcon',
     label: 'Email',
-    value: 'orders@bbrnatural.in',
+    value: 'orders@brrnatural.in',
     sub: 'Reply within 24 hours',
-    href: 'mailto:orders@bbrnatural.in',
+    href: 'mailto:orders@brrnatural.in',
     color: 'bg-accent/10 text-accent',
   },
   {
     icon: 'MapPinIcon',
-    label: 'Location',
-    value: 'Guntur District, Andhra Pradesh',
-    sub: 'India — 522 xxx',
-    href: 'https://maps.google.com/?q=Guntur,Andhra+Pradesh,India',
+    label: 'Manufacturing',
+    value: 'Karimnagar District, Telangana',
+    sub: 'Huzurabad Mandal, Rangapur Village',
+    href: 'https://maps.google.com/?q=Rangapur+Karimnagar+Telangana+India',
     color: 'bg-secondary/10 text-secondary',
   },
   {
@@ -74,7 +74,7 @@ export default function ContactDetails() {
 
             {/* WhatsApp prominent CTA */}
             <a
-              href="https://wa.me/919876543210?text=Hi%20BBR%20Natural%2C%20I%20want%20to%20place%20an%20order"
+              href="https://wa.me/918978385957?text=Hi%20BRR%20Natural%2C%20I%20want%20to%20place%20an%20order"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-2 whatsapp-btn justify-center text-base"
@@ -98,7 +98,7 @@ export default function ContactDetails() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="BBR Natural Location — Guntur, Andhra Pradesh"
+                  title="BRR Natural Location — Karimnagar, Telangana"
                 />
               </div>
               <div className="p-5 bg-card border-t border-border flex items-center gap-3">
@@ -106,8 +106,8 @@ export default function ContactDetails() {
                   <Icon name="MapPinIcon" size={16} className="text-primary" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-foreground">BBR Natural</p>
-                  <p className="text-xs text-muted-foreground">Guntur District, Andhra Pradesh, India</p>
+                  <p className="text-sm font-semibold text-foreground">BRR Natural</p>
+                  <p className="text-xs text-muted-foreground">Karimnagar District, Telangana, India</p>
                 </div>
               </div>
             </div>

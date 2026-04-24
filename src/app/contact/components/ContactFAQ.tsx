@@ -5,7 +5,7 @@ import Icon from '@/components/ui/AppIcon';
 const faqs = [
   {
     q: 'How do I place an order?',
-    a: 'The easiest way is to WhatsApp us at +91 98765 43210 with the product name, size, and your delivery address. We confirm within 2–4 hours and pack fresh for you.',
+    a: 'The easiest way is to WhatsApp us at +91 89783 95957 with the product name, size, and your delivery address. We confirm within 2–4 hours and pack fresh for you.',
   },
   {
     q: 'Do you deliver outside Andhra Pradesh?',
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: 'Is the oil FSSAI certified?',
-    a: 'Yes, BBR Natural operates under FSSAI guidelines. Our products are manufactured in a clean, hygienic facility and are free from adulteration. Batch details are printed on every pack.',
+    a: 'Yes, BRR Natural operates under FSSAI guidelines. Our products are manufactured in a clean, hygienic facility and are free from adulteration. Batch details are printed on every pack.',
   },
   {
     q: 'What payment methods do you accept?',
@@ -51,7 +51,7 @@ export default function ContactFAQ() {
               Can&apos;t find your answer? WhatsApp us directly — we&apos;re always happy to help.
             </p>
             <a
-              href="https://wa.me/919876543210?text=Hi%20BBR%20Natural%2C%20I%20have%20a%20question"
+              href="https://wa.me/918978385957?text=Hi%20BRR%20Natural%2C%20I%20have%20a%20question"
               target="_blank"
               rel="noopener noreferrer"
               className="whatsapp-btn text-sm w-fit"
