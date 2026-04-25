@@ -4,7 +4,13 @@ import AppImage from '@/components/ui/AppImage';
 
 const founders = [
 {
-  name: 'Madhu Reddy',
+  name: 'Bhagavan Reddy',
+  role: 'Co-Founder',
+  initial: 'B',
+  desc: 'Oversees the traditional pressing process and ensures the wooden chekku method is preserved authentically.'
+},
+{
+  name: 'Madhukar Reddy',
   role: 'Co-Founder',
   initial: 'M',
   desc: 'Leads operations and quality control. Ensures every batch meets the purity standards our grandfather set.'
@@ -14,14 +20,7 @@ const founders = [
   role: 'Co-Founder',
   initial: 'B',
   desc: 'Manages farm relationships and raw material sourcing directly from trusted farmers in Telangana and Andhra Pradesh.'
-},
-{
-  name: 'Bhagavan Reddy',
-  role: 'Co-Founder',
-  initial: 'B',
-  desc: 'Oversees the traditional pressing process and ensures the wooden chekku method is preserved authentically.'
 }];
-
 
 export default function FamilyHeritage() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -90,7 +89,7 @@ export default function FamilyHeritage() {
                 Our grandfather, <strong className="text-foreground font-semibold">Rajireddy</strong>, ran a traditional wooden chekku in Rangapur Village, Huzurabad Mandal, Karimnagar District, Telangana. Every morning, the chekku would turn — pressing pure groundnut and sesame oil for the families of the village.
               </p>
               <p className="text-base">
-                Growing up, brothers <strong className="text-foreground font-semibold">Madhu, Bharath, and Bhagavan</strong> watched this ritual. They saw how the oil tasted different — richer, more fragrant, more alive. They also saw how the world was moving toward refined, chemical-processed oils that stripped away everything good.
+                Growing up, brothers <strong className="text-foreground font-semibold">Bhagavan, Madhukar, and Bharath</strong> watched this ritual. They saw how the oil tasted different — richer, more fragrant, more alive. They also saw how the world was moving toward refined, chemical-processed oils that stripped away everything good.
               </p>
               <p className="text-base">
                 In 2020, they made a decision: to revive the chekku, honour their grandfather&apos;s name, and bring genuinely pure food to families who deserve better. <strong className="text-foreground font-semibold">BRR Natural was born.</strong>
@@ -127,7 +126,7 @@ export default function FamilyHeritage() {
                 <p className="font-serif text-lg italic text-white leading-snug">
                   "The same oil my grandfather made — now available for every family in India."
                 </p>
-                <p className="text-xs text-white/70 mt-2 font-semibold tracking-wider uppercase">— Madhu Reddy, Co-Founder</p>
+                <p className="text-xs text-white/70 mt-2 font-semibold tracking-wider uppercase">— Bhagavan Reddy, Co-Founder</p>
               </div>
             </div>
 

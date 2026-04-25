@@ -11,7 +11,7 @@ export default function ContactPage() {
     <>
       <div className="noise-overlay" aria-hidden="true" />
       <Header />
-      <main>
+      <main className="pt-16">
         <ContactHero />
         <ContactDetails />
         <InquiryForm />

@@ -4,9 +4,9 @@ import Link from 'next/link';
 import AppImage from '@/components/ui/AppImage';
 
 const founders = [
-{ name: 'Madhu Reddy', role: 'Co-Founder', initial: 'M' },
-{ name: 'Bharath Reddy', role: 'Co-Founder', initial: 'B' },
-{ name: 'Bhagavan Reddy', role: 'Co-Founder', initial: 'B' }];
+{ name: 'Bhagavan Reddy', role: 'Co-Founder', initial: 'B' },
+{ name: 'Madhukar Reddy', role: 'Co-Founder', initial: 'M' },
+{ name: 'Bharath Reddy', role: 'Co-Founder', initial: 'B' }];
 
 
 export default function FounderStory() {
@@ -55,7 +55,7 @@ export default function FounderStory() {
                 BRR Natural stands for <strong className="text-foreground font-semibold">Baikadi Rajireddy Natural</strong> — named after our grandfather, Rajireddy, whose wisdom and love for pure food inspired everything we do. <em>Baikadi</em> is our family name, rooted in Rangapur Village, Huzurabad Mandal, Karimnagar District, Telangana.
               </p>
               <p className="text-base">
-                Three brothers — <strong className="text-foreground font-semibold">Madhu Reddy, Bharath Reddy, and Bhagavan Reddy</strong> — grew up watching their grandfather press oil the traditional wooden chekku way. They saw how modern refining stripped away everything good from food, and decided to bring back what was lost.
+                Three brothers — <strong className="text-foreground font-semibold">Bhagavan Reddy, Madhukar Reddy, and Bharath Reddy</strong> — grew up watching their grandfather press oil the traditional wooden chekku way. They saw how modern refining stripped away everything good from food, and decided to bring back what was lost.
               </p>
               <p className="text-base">
                 Today, we press oils and grind spices the same way our grandfather did — no chemicals, no shortcuts, no compromises. Every bottle carries the spirit of Rangapur Village and the trust of three generations.

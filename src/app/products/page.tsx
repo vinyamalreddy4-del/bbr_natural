@@ -11,7 +11,7 @@ export default function ProductsPage() {
     <>
       <div className="noise-overlay" aria-hidden="true" />
       <Header />
-      <main>
+      <main className="pt-16">
         <ProductsHero />
         <ProductCatalog />
         <PackagingSection />

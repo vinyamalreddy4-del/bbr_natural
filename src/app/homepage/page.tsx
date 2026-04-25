@@ -14,7 +14,7 @@ export default function HomepagePage() {
     <>
       <div className="noise-overlay" aria-hidden="true" />
       <Header />
-      <main>
+      <main className="pt-16">
         <HeroSection />
         <FeaturedProducts />
         <ProcessSection />

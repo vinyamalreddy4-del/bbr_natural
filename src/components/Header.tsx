@@ -33,18 +33,18 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 border-b border-border/30 ${
           scrolled
             ? 'bg-background/97 backdrop-blur-xl shadow-[0_1px_0_0_rgba(232,213,163,0.6)] py-2.5'
-            : 'bg-transparent py-4'
+            : 'bg-background/95 backdrop-blur-sm py-4'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-2 sm:gap-4">
 
           {/* Logo */}
           <Link href="/homepage" className="flex items-center shrink-0 group">
             <BRRLogo
-              size="md"
+              size="sm"
               showText={true}
               textVariant="full"
               className="group-hover:opacity-90 transition-opacity duration-200"
