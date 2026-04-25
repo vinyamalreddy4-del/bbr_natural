@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import AppImage from '@/components/ui/AppImage';
+import BRRLogo from '@/components/ui/BRRLogo';
 import Icon from '@/components/ui/AppIcon';
 
 export default function Header() {
@@ -42,29 +42,13 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4">
 
           {/* Logo */}
-          <Link href="/homepage" className="flex items-center gap-3 group shrink-0">
-            {/* Logo image container — fixed square, no overflow clip */}
-            <div className="relative shrink-0 w-[52px] h-[52px] sm:w-[56px] sm:h-[56px] rounded-xl overflow-hidden border border-border/60 bg-white shadow-sm group-hover:shadow-md transition-shadow duration-300">
-              <AppImage
-                src="/assets/images/app_logo.png"
-                alt="BRR Natural logo — Baikadi Rajireddy Natural, traditional cold-pressed oils"
-                fill
-                className="object-contain p-1"
-                priority={true}
-              />
-            </div>
-            {/* Brand name text */}
-            <div className="flex flex-col min-w-0">
-              <span className="font-serif text-sm sm:text-[15px] lg:text-base font-semibold text-primary leading-tight tracking-tight">
-                BRR Natural
-              </span>
-              <span className="hidden sm:block text-[9px] font-bold tracking-[0.22em] uppercase text-accent leading-none mt-0.5">
-                Baikadi Rajireddy Natural
-              </span>
-              <span className="sm:hidden text-[9px] font-bold tracking-[0.18em] uppercase text-accent leading-none mt-0.5">
-                Pure &amp; Traditional
-              </span>
-            </div>
+          <Link href="/homepage" className="flex items-center shrink-0 group">
+            <BRRLogo
+              size="md"
+              showText={true}
+              textVariant="full"
+              className="group-hover:opacity-90 transition-opacity duration-200"
+            />
           </Link>
 
           {/* Desktop Nav */}
@@ -130,21 +114,7 @@ export default function Header() {
         }`}
       >
         <div className="flex items-center justify-between p-5 border-b border-border">
-          <div className="flex items-center gap-3">
-            <div className="relative w-10 h-10 rounded-lg overflow-hidden border border-border/60 bg-white shrink-0">
-              <AppImage
-                src="/assets/images/app_logo.png"
-                alt="BRR Natural logo"
-                fill
-                className="object-contain p-0.5"
-                priority={true}
-              />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-serif text-sm font-semibold text-primary leading-tight">BRR Natural</span>
-              <span className="text-[9px] font-bold tracking-[0.18em] uppercase text-accent leading-none">Pure &amp; Traditional</span>
-            </div>
-          </div>
+          <BRRLogo size="sm" showText={true} textVariant="compact" />
           <button
             className="p-2 rounded-lg hover:bg-muted transition-colors"
             onClick={() => setMenuOpen(false)}

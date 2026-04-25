@@ -1,136 +1,123 @@
 'use client';
 
-import React, { memo, useMemo } from 'react';
+import React, { memo } from 'react';
 
 interface BRRLogoProps {
-  variant?: 'full' | 'icon' | 'compact';
   size?: 'sm' | 'md' | 'lg';
   className?: string;
-  onClick?: () => void;
+  showText?: boolean;
+  textVariant?: 'full' | 'compact';
 }
 
 const BRRLogo = memo(function BRRLogo({
-  variant = 'full',
   size = 'md',
   className = '',
-  onClick,
+  showText = true,
+  textVariant = 'compact',
 }: BRRLogoProps) {
-  // Size configurations
-  const sizeConfig = useMemo(() => ({
-    sm: { icon: 28, text: 'text-sm', tagline: 'text-[8px]', gap: 'gap-2' },
-    md: { icon: 36, text: 'text-base', tagline: 'text-[10px]', gap: 'gap-2.5' },
-    lg: { icon: 48, text: 'text-lg', tagline: 'text-xs', gap: 'gap-3' },
-  }), []);
+  const iconSize = size === 'sm' ? 40 : size === 'lg' ? 60 : 48;
 
-  const config = sizeConfig[size];
-
-  // Memoize className calculation
-  const containerClassName = useMemo(() => {
-    const classes = ['flex items-center', config.gap];
-    if (onClick) classes.push('cursor-pointer hover:opacity-80 transition-opacity');
-    if (className) classes.push(className);
-    return classes.join(' ');
-  }, [onClick, className, config.gap]);
-
-  // BRR Icon SVG - Compact, geometric design
-  const BRRIcon = useMemo(() => (
-    <svg
-      width={config.icon}
-      height={config.icon}
-      viewBox="0 0 48 48"
-      fill="none"
-      className="flex-shrink-0"
-      aria-label="BRR Natural Logo"
-    >
-      {/* Circular background with gradient */}
-      <defs>
-        <linearGradient id="brrGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="currentColor" stopOpacity="1" />
-          <stop offset="100%" stopColor="currentColor" stopOpacity="0.7" />
-        </linearGradient>
-      </defs>
-      
-      {/* Outer circle */}
-      <circle
-        cx="24"
-        cy="24"
-        r="22"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        fill="none"
-        opacity="0.3"
-      />
-      
-      {/* Inner filled circle */}
-      <circle
-        cx="24"
-        cy="24"
-        r="18"
-        fill="currentColor"
-        opacity="0.08"
-      />
-      
-      {/* B letter - stylized */}
-      <path
-        d="M10 14 L10 34 M10 14 L18 14 Q22 14 22 19 Q22 22 18 23 L10 23 M10 23 L19 23 Q23 23 23 28 Q23 34 18 34 L10 34"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-      />
-      
-      {/* First R letter - stylized */}
-      <path
-        d="M24 14 L24 34 M24 14 L32 14 Q36 14 36 19 Q36 23 32 24 L24 24 M30 22 L36 34"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-      />
-      
-      {/* Leaf accent - representing "Natural" */}
-      <path
-        d="M38 12 Q42 16 38 20 Q34 16 38 12Z"
-        fill="currentColor"
-        opacity="0.6"
-      />
-    </svg>
-  ), [config.icon]);
-
-  // Compact icon-only version
-  if (variant === 'icon') {
-    return (
-      <div 
-        className={`${containerClassName} justify-center`}
-        onClick={onClick}
-      >
-        {BRRIcon}
-      </div>
-    );
-  }
-
-  // Full logo with text
   return (
-    <div className={containerClassName} onClick={onClick}>
-      {BRRIcon}
-      
-      {variant === 'full' && (
-        <div className="flex flex-col leading-tight">
-          <span className={`font-serif font-semibold text-primary ${config.text} tracking-tight`}>
-            Baikadi Rajireddy Natural
+    <div className={`flex items-center gap-2.5 ${className}`}>
+      {/* Premium BRR SVG Icon */}
+      <svg
+        width={iconSize}
+        height={iconSize}
+        viewBox="0 0 60 60"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-label="BRR Natural Logo"
+        className="flex-shrink-0"
+      >
+        <defs>
+          <radialGradient id="brrBg" cx="50%" cy="40%" r="55%">
+            <stop offset="0%" stopColor="#FFFBF0" />
+            <stop offset="100%" stopColor="#F5E6C0" />
+          </radialGradient>
+          <linearGradient id="brrRing" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#C8922A" />
+            <stop offset="50%" stopColor="#E8B84B" />
+            <stop offset="100%" stopColor="#A67520" />
+          </linearGradient>
+          <linearGradient id="brrLeaf" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#4A7C1F" />
+            <stop offset="100%" stopColor="#2D5016" />
+          </linearGradient>
+        </defs>
+
+        {/* Outer decorative ring */}
+        <circle cx="30" cy="30" r="29" stroke="url(#brrRing)" strokeWidth="1.5" fill="none" opacity="0.7" />
+
+        {/* Inner background circle */}
+        <circle cx="30" cy="30" r="26" fill="url(#brrBg)" />
+
+        {/* Second inner ring */}
+        <circle cx="30" cy="30" r="24" stroke="#C8922A" strokeWidth="0.6" fill="none" opacity="0.4" />
+
+        {/* Leaf motif at top */}
+        <path
+          d="M30 7 C28 9.5 26.5 12 28 14 C29 15.5 31 15.5 32 14 C33.5 12 32 9.5 30 7Z"
+          fill="url(#brrLeaf)"
+          opacity="0.9"
+        />
+        <line x1="30" y1="14" x2="30" y2="17" stroke="#4A7C1F" strokeWidth="0.8" opacity="0.7" />
+
+        {/* BRR Letters — bold, centered, premium */}
+        {/* B */}
+        <path
+          d="M11 22 L11 38 M11 22 L17.5 22 Q21 22 21 25.5 Q21 28 17.5 29 L11 29 M11 29 L18 29 Q22 29 22 32.5 Q22 36 18 36 L11 36"
+          stroke="#2D5016"
+          strokeWidth="2.2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          fill="none"
+        />
+
+        {/* First R */}
+        <path
+          d="M25 22 L25 38 M25 22 L31.5 22 Q35 22 35 25.5 Q35 29 31.5 30 L25 30 M30 29 L35.5 38"
+          stroke="#2D5016"
+          strokeWidth="2.2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          fill="none"
+        />
+
+        {/* Second R */}
+        <path
+          d="M38 22 L38 38 M38 22 L44.5 22 Q48 22 48 25.5 Q48 29 44.5 30 L38 30 M43 29 L48.5 38"
+          stroke="#2D5016"
+          strokeWidth="2.2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          fill="none"
+        />
+
+        {/* Bottom tagline bar */}
+        <rect x="14" y="41" width="32" height="1" rx="0.5" fill="#C8922A" opacity="0.5" />
+
+        {/* Dot accents */}
+        <circle cx="12" cy="44" r="1" fill="#C8922A" opacity="0.6" />
+        <circle cx="30" cy="44" r="1" fill="#C8922A" opacity="0.6" />
+        <circle cx="48" cy="44" r="1" fill="#C8922A" opacity="0.6" />
+      </svg>
+
+      {/* Brand text */}
+      {showText && (
+        <div className="flex flex-col leading-tight min-w-0">
+          <span className="font-serif font-bold text-primary tracking-tight text-[15px] sm:text-base leading-tight">
+            BRR Natural
           </span>
-          <span className={`font-semibold tracking-[0.15em] uppercase text-accent ${config.tagline} leading-none`}>
-            Pure & Traditional
-          </span>
+          {textVariant === 'full' ? (
+            <span className="hidden sm:block text-[9px] font-bold tracking-[0.22em] uppercase text-accent leading-none mt-0.5">
+              Baikadi Rajireddy Natural
+            </span>
+          ) : (
+            <span className="text-[9px] font-bold tracking-[0.18em] uppercase text-accent leading-none mt-0.5">
+              Pure &amp; Traditional
+            </span>
+          )}
         </div>
-      )}
-      
-      {variant === 'compact' && (
-        <span className={`font-serif font-semibold text-primary ${config.text} tracking-tight`}>
-          BRR Natural
-        </span>
       )}
     </div>
   );
