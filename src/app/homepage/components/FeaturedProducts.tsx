@@ -119,11 +119,11 @@ export default function FeaturedProducts() {
         </div>
 
         {/* BENTO GRID AUDIT:
-             Array has 4 cards: [Groundnut Oil, Sesame Oil, Chilli Powder, Turmeric Powder]
-             Row 1: [col-1-2: Groundnut Oil cs-2] [col-3: Sesame Oil cs-1]
-             Row 2: [col-1: Chilli Powder cs-1] [col-2-3: Turmeric Powder cs-2]
-             Placed 4/4 cards ✓
-          */}
+              Array has 4 cards: [Groundnut Oil, Sesame Oil, Chilli Powder, Turmeric Powder]
+              Row 1: [col-1-2: Groundnut Oil cs-2] [col-3: Sesame Oil cs-1]
+              Row 2: [col-1: Chilli Powder cs-1] [col-2-3: Turmeric Powder cs-2]
+              Placed 4/4 cards ✓
+           */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5">
           {products.map((product, idx) =>
           <div
@@ -136,41 +136,41 @@ export default function FeaturedProducts() {
             }}>
 
               {/* Image */}
-              <div className={`relative overflow-hidden rounded-t-[1.25rem] bg-gradient-to-br ${product.color} h-52 sm:h-56`}>
+              <div className={`relative overflow-hidden rounded-t-[1.25rem] bg-gradient-to-br ${product.color} h-48 sm:h-52 lg:h-56`}>
                 <AppImage
                 src={product.image}
                 alt={product.imageAlt}
                 fill
                 className="object-cover"
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                 {/* Tag */}
-                <span className={`absolute top-4 left-4 text-xs font-bold tracking-wider px-3 py-1 rounded-full ${product.tagColor}`}>
+                <span className={`absolute top-3 left-3 sm:top-4 sm:left-4 text-xs font-bold tracking-wider px-2.5 sm:px-3 py-1 rounded-full ${product.tagColor}`}>
                   {product.tag}
                 </span>
                 {/* Emoji */}
-                <span className="absolute top-4 right-4 text-2xl">{product.emoji}</span>
+                <span className="absolute top-3 right-3 sm:top-4 sm:right-4 text-xl sm:text-2xl">{product.emoji}</span>
               </div>
 
               {/* Content */}
-              <div className="p-5 flex flex-col gap-3">
+              <div className="p-4 sm:p-5 flex flex-col gap-2.5 sm:gap-3">
                 <div className="flex items-start justify-between gap-2">
                   <div>
-                    <h3 className="font-semibold text-base text-foreground">{product.name}</h3>
+                    <h3 className="font-semibold text-sm sm:text-base text-foreground">{product.name}</h3>
                     <p className="text-xs text-muted-foreground font-medium">{product.telugu}</p>
                   </div>
                   <div className="text-right shrink-0">
-                    <p className="font-serif text-xl font-medium text-accent">₹{product.price}</p>
+                    <p className="font-serif text-lg sm:text-xl font-medium text-accent">₹{product.price}</p>
                     <p className="text-xs text-muted-foreground">{product.size}</p>
                   </div>
                 </div>
 
-                <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2">{product.description}</p>
+                <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed line-clamp-2">{product.description}</p>
 
-                <div className="flex flex-wrap gap-1.5">
+                <div className="flex flex-wrap gap-1 sm:gap-1.5">
                   {product.benefits.map((b) =>
-                <span key={b} className="text-xs bg-muted text-muted-foreground px-2.5 py-1 rounded-full font-medium border border-border">
+                <span key={b} className="text-xs bg-muted text-muted-foreground px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full font-medium border border-border">
                       {b}
                     </span>
                 )}

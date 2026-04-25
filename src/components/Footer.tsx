@@ -12,9 +12,9 @@ export default function Footer() {
           {/* Left: Logo + Tagline */}
           <div className="flex flex-col gap-4 max-w-xs">
             <Link href="/homepage" className="flex items-center gap-3">
-              <AppLogo size={40} />
+              <AppLogo size={48} className="shrink-0" />
               <div className="flex flex-col">
-                <span className="font-serif text-lg font-medium text-primary leading-tight">BRR Natural</span>
+                <span className="font-serif text-base sm:text-lg font-medium text-primary leading-tight">BRR Natural</span>
                 <span className="text-[10px] font-semibold tracking-[0.18em] uppercase text-accent">Pure & Traditional</span>
               </div>
             </Link>
