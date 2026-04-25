@@ -85,14 +85,14 @@ Message: ${form.message}`;
   }
 
   return (
-    <section className="py-16 bg-muted/30">
+    <section className="py-12 sm:py-16 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
           {/* Left: Info */}
-          <div className="lg:col-span-4 flex flex-col gap-6">
+          <div className="lg:col-span-4 flex flex-col gap-5 sm:gap-6">
             <div>
               <span className="text-xs font-bold tracking-[0.35em] uppercase text-accent block mb-3">Inquiry Form</span>
-              <h2 className="font-serif text-[clamp(1.8rem,4vw,2.8rem)] font-light tracking-tight leading-tight">
+              <h2 className="font-serif text-[clamp(1.6rem,4vw,2.8rem)] font-light tracking-tight leading-tight">
                 Send Us an<br />
                 <span className="italic text-primary">Inquiry</span>
               </h2>
@@ -107,7 +107,7 @@ Message: ${form.message}`;
                 { icon: '🛒', title: 'Bulk Orders Welcome', desc: 'Special pricing for 10L+ oil or 5kg+ spices' },
                 { icon: '🚚', title: 'Pan-India Delivery', desc: 'We ship via courier to all Indian states' },
               ].map((item) => (
-                <div key={item.title} className="flex items-start gap-3 p-4 bg-card rounded-xl border border-border">
+                <div key={item.title} className="flex items-start gap-3 p-3 sm:p-4 bg-card rounded-xl border border-border">
                   <span className="text-lg shrink-0">{item.icon}</span>
                   <div>
                     <p className="text-sm font-semibold text-foreground">{item.title}</p>
@@ -122,9 +122,9 @@ Message: ${form.message}`;
           <div className="lg:col-span-8">
             <form
               onSubmit={handleSubmit}
-              className="bg-card rounded-3xl border border-border p-6 sm:p-8 flex flex-col gap-5 shadow-sm"
+              className="bg-card rounded-2xl sm:rounded-3xl border border-border p-4 sm:p-6 lg:p-8 flex flex-col gap-4 sm:gap-5 shadow-sm"
             >
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
                 {/* Name */}
                 <div className="flex flex-col gap-1.5">
                   <label htmlFor="name" className="text-xs font-bold tracking-wider uppercase text-muted-foreground">
@@ -138,7 +138,7 @@ Message: ${form.message}`;
                     value={form.name}
                     onChange={handleChange}
                     placeholder="e.g. Lakshmi Devi"
-                    className="w-full px-4 py-3 rounded-xl border border-input bg-background text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition-all"
+                    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-xl border border-input bg-background text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition-all"
                   />
                 </div>
 
@@ -155,7 +155,7 @@ Message: ${form.message}`;
                     value={form.phone}
                     onChange={handleChange}
                     placeholder="+91 89783 95957"
-                    className="w-full px-4 py-3 rounded-xl border border-input bg-background text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition-all"
+                    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-xl border border-input bg-background text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition-all"
                   />
                 </div>
 
@@ -171,7 +171,7 @@ Message: ${form.message}`;
                     value={form.email}
                     onChange={handleChange}
                     placeholder="your@email.com"
-                    className="w-full px-4 py-3 rounded-xl border border-input bg-background text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition-all"
+                    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-xl border border-input bg-background text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition-all"
                   />
                 </div>
 
@@ -186,7 +186,7 @@ Message: ${form.message}`;
                     required
                     value={form.product}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-xl border border-input bg-background text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition-all"
+                    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-xl border border-input bg-background text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition-all"
                   >
                     <option value="">Select a product</option>
                     <option value="Groundnut Oil">Groundnut Oil (వేరుశెనగ నూనె)</option>
@@ -209,7 +209,7 @@ Message: ${form.message}`;
                     value={form.quantity}
                     onChange={handleChange}
                     placeholder="e.g. 2 litres groundnut oil, 500g chilli powder"
-                    className="w-full px-4 py-3 rounded-xl border border-input bg-background text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition-all"
+                    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-xl border border-input bg-background text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition-all"
                   />
                 </div>
 
@@ -225,7 +225,7 @@ Message: ${form.message}`;
                     value={form.message}
                     onChange={handleChange}
                     placeholder="Any specific requirements, delivery address, or questions..."
-                    className="w-full px-4 py-3 rounded-xl border border-input bg-background text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition-all resize-none"
+                    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-xl border border-input bg-background text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition-all resize-none"
                   />
                 </div>
               </div>

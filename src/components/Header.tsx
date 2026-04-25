@@ -41,13 +41,13 @@ export default function Header() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/homepage" className="flex items-center gap-3 group">
-             <AppLogo size={60} className="transition-transform duration-300 group-hover:scale-105" />
-            <div className="flex flex-col">
-              <span className="font-serif text-lg font-medium text-primary leading-tight tracking-tight">
+          <Link href="/homepage" className="flex items-center gap-2 sm:gap-3 group min-w-0">
+             <AppLogo size={48} className="transition-transform duration-300 group-hover:scale-105 shrink-0" />
+            <div className="flex flex-col min-w-0">
+              <span className="font-serif text-sm sm:text-base lg:text-lg font-medium text-primary leading-tight tracking-tight truncate">
                 Baikadi Rajireddy Natural
               </span>
-              <span className="text-[10px] font-semibold tracking-[0.18em] uppercase text-accent leading-none">
+              <span className="text-[9px] sm:text-[10px] font-semibold tracking-[0.18em] uppercase text-accent leading-none">
                 Pure & Traditional
               </span>
             </div>
@@ -114,7 +114,7 @@ export default function Header() {
       >
         <div className="flex items-center justify-between p-5 border-b border-border">
           <div className="flex items-center gap-3">
-            <AppLogo size={36} />
+            <AppLogo size={44} />
             <span className="font-serif text-base font-medium text-primary">BRR Natural</span>
           </div>
           <button
