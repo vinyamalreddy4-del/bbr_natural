@@ -19,8 +19,14 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Chemical-free cold pressed oils and natural spices, made the way your grandparents knew.
+              Chemical-free cold pressed oils and natural spices, made the way your grandparents knew. From Rangapur Village, Karimnagar, Telangana.
             </p>
+            {/* Trust strip */}
+            <div className="flex flex-col gap-1.5">
+              {['🌿 Farm to Bottle', '✅ Pure & Traditional', '🏡 From Our Village to Your Kitchen']?.map((t) => (
+                <span key={t} className="text-xs text-muted-foreground font-medium">{t}</span>
+              ))}
+            </div>
             <div className="flex items-center gap-3">
               <a
                 href="https://wa.me/918978385957"
@@ -59,6 +65,7 @@ export default function Footer() {
               <span className="text-xs font-bold tracking-[0.2em] uppercase text-muted-foreground">Company</span>
               <div className="flex flex-col gap-2">
                 <Link href="/homepage" className="text-sm font-medium text-foreground hover:text-primary transition-colors">Home</Link>
+                <Link href="/about" className="text-sm font-medium text-foreground hover:text-primary transition-colors">About Us</Link>
                 <Link href="/homepage#process" className="text-sm font-medium text-foreground hover:text-primary transition-colors">Our Process</Link>
                 <Link href="/contact" className="text-sm font-medium text-foreground hover:text-primary transition-colors">Contact</Link>
               </div>
