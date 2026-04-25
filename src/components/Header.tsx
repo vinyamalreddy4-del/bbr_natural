@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import AppLogo from '@/components/ui/AppLogo';
+import AppImage from '@/components/ui/AppImage';
 import Icon from '@/components/ui/AppIcon';
 
 export default function Header() {
@@ -35,31 +35,45 @@ export default function Header() {
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
           scrolled
-            ? 'bg-background/95 backdrop-blur-md shadow-sm border-b border-border py-3'
-            : 'bg-transparent py-5'
+            ? 'bg-background/97 backdrop-blur-xl shadow-[0_1px_0_0_rgba(232,213,163,0.6)] py-2.5'
+            : 'bg-transparent py-4'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4">
+
           {/* Logo */}
-          <Link href="/homepage" className="flex items-center gap-2 sm:gap-3 group min-w-0">
-             <AppLogo size={48} className="transition-transform duration-300 group-hover:scale-105 shrink-0" />
+          <Link href="/homepage" className="flex items-center gap-3 group shrink-0">
+            {/* Logo image container — fixed square, no overflow clip */}
+            <div className="relative shrink-0 w-[52px] h-[52px] sm:w-[56px] sm:h-[56px] rounded-xl overflow-hidden border border-border/60 bg-white shadow-sm group-hover:shadow-md transition-shadow duration-300">
+              <AppImage
+                src="/assets/images/app_logo.png"
+                alt="BRR Natural logo — Baikadi Rajireddy Natural, traditional cold-pressed oils"
+                fill
+                className="object-contain p-1"
+                priority={true}
+              />
+            </div>
+            {/* Brand name text */}
             <div className="flex flex-col min-w-0">
-              <span className="font-serif text-sm sm:text-base lg:text-lg font-medium text-primary leading-tight tracking-tight truncate">
+              <span className="font-serif text-sm sm:text-[15px] lg:text-base font-semibold text-primary leading-tight tracking-tight">
+                BRR Natural
+              </span>
+              <span className="hidden sm:block text-[9px] font-bold tracking-[0.22em] uppercase text-accent leading-none mt-0.5">
                 Baikadi Rajireddy Natural
               </span>
-              <span className="text-[9px] sm:text-[10px] font-semibold tracking-[0.18em] uppercase text-accent leading-none">
-                Pure & Traditional
+              <span className="sm:hidden text-[9px] font-bold tracking-[0.18em] uppercase text-accent leading-none mt-0.5">
+                Pure &amp; Traditional
               </span>
             </div>
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-7">
             {navLinks?.map((link) => (
               <Link
                 key={link?.href}
                 href={link?.href}
-                className="text-sm font-600 text-muted-foreground hover:text-primary transition-colors relative group"
+                className="text-sm font-semibold text-muted-foreground hover:text-primary transition-colors relative group"
               >
                 {link?.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-accent group-hover:w-full transition-all duration-300 rounded-full" />
@@ -68,21 +82,21 @@ export default function Header() {
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-2.5">
             <a
               href="tel:+918978385957"
-              className="flex items-center gap-2 text-sm font-semibold text-primary border border-primary/30 rounded-full px-4 py-2 hover:bg-primary/5 transition-colors"
+              className="flex items-center gap-1.5 text-xs font-bold text-primary border border-primary/25 rounded-full px-3.5 py-2 hover:bg-primary/5 hover:border-primary/50 transition-all"
             >
-              <Icon name="PhoneIcon" size={15} variant="solid" />
+              <Icon name="PhoneIcon" size={13} variant="solid" />
               Call Now
             </a>
             <a
               href="https://wa.me/918978385957?text=Hi%20BRR%20Natural%2C%20I%20want%20to%20order"
               target="_blank"
               rel="noopener noreferrer"
-              className="whatsapp-btn text-sm"
+              className="whatsapp-btn text-xs !py-2 !px-4"
             >
-              <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+              <svg viewBox="0 0 24 24" fill="currentColor" className="w-3.5 h-3.5 shrink-0">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
                 <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.527 5.858L0 24l6.335-1.509A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 01-5.007-1.374l-.36-.214-3.736.979.999-3.641-.235-.374A9.795 9.795 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.42-4.398 9.818-9.818 9.818z"/>
               </svg>
@@ -100,6 +114,7 @@ export default function Header() {
           </button>
         </div>
       </header>
+
       {/* Mobile Menu Overlay */}
       {menuOpen && (
         <div
@@ -107,6 +122,8 @@ export default function Header() {
           onClick={() => setMenuOpen(false)}
         />
       )}
+
+      {/* Mobile Drawer */}
       <div
         className={`fixed top-0 right-0 h-full w-80 max-w-[85vw] z-[101] bg-background shadow-2xl transform transition-transform duration-400 ease-[cubic-bezier(0.25,0.8,0.25,1)] ${
           menuOpen ? 'translate-x-0' : 'translate-x-full'
@@ -114,8 +131,19 @@ export default function Header() {
       >
         <div className="flex items-center justify-between p-5 border-b border-border">
           <div className="flex items-center gap-3">
-            <AppLogo size={44} />
-            <span className="font-serif text-base font-medium text-primary">BRR Natural</span>
+            <div className="relative w-10 h-10 rounded-lg overflow-hidden border border-border/60 bg-white shrink-0">
+              <AppImage
+                src="/assets/images/app_logo.png"
+                alt="BRR Natural logo"
+                fill
+                className="object-contain p-0.5"
+                priority={true}
+              />
+            </div>
+            <div className="flex flex-col">
+              <span className="font-serif text-sm font-semibold text-primary leading-tight">BRR Natural</span>
+              <span className="text-[9px] font-bold tracking-[0.18em] uppercase text-accent leading-none">Pure &amp; Traditional</span>
+            </div>
           </div>
           <button
             className="p-2 rounded-lg hover:bg-muted transition-colors"
@@ -125,7 +153,7 @@ export default function Header() {
             <Icon name="XMarkIcon" size={22} className="text-foreground" />
           </button>
         </div>
-        <nav className="flex flex-col p-6 gap-2">
+        <nav className="flex flex-col p-6 gap-1">
           {navLinks?.map((link) => (
             <Link
               key={link?.href}
@@ -137,14 +165,14 @@ export default function Header() {
             </Link>
           ))}
         </nav>
-        <div className="px-6 flex flex-col gap-3 mt-4">
+        <div className="px-6 flex flex-col gap-3 mt-2">
           <a
             href="https://wa.me/918978385957?text=Hi%20BRR%20Natural%2C%20I%20want%20to%20order"
             target="_blank"
             rel="noopener noreferrer"
             className="whatsapp-btn justify-center text-sm"
           >
-            <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+            <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 shrink-0">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
               <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.527 5.858L0 24l6.335-1.509A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 01-5.007-1.374l-.36-.214-3.736.979.999-3.641-.235-.374A9.795 9.795 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.42-4.398 9.818-9.818 9.818z"/>
             </svg>
