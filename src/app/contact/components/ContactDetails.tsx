@@ -93,7 +93,7 @@ export default function ContactDetails() {
               {/* Map embed placeholder */}
               <div className="flex-1 relative bg-gradient-to-br from-primary/5 to-accent/5">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.31571552377!2d79.8736899!3d16.3066525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35eff9272db03f%3A0x6a8d0e0a91e67f7b!2sGuntur%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1714000000000!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121640.27!2d79.5!3d18.17!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbf0b0b0b0b0b0%3A0x0!2sKarimnagar%2C%20Telangana!5e0!3m2!1sen!2sin!4v1714000000000!5m2!1sen!2sin"
                   className="w-full h-full min-h-[400px] border-0"
                   allowFullScreen
                   loading="lazy"
@@ -106,8 +106,8 @@ export default function ContactDetails() {
                   <Icon name="MapPinIcon" size={16} className="text-primary" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-foreground">BRR Natural</p>
-                  <p className="text-xs text-muted-foreground">Karimnagar District, Telangana, India</p>
+                  <p className="text-sm font-semibold text-foreground">BRR Natural — Rangapur Village</p>
+                  <p className="text-xs text-muted-foreground">Huzurabad Mandal, Karimnagar District, Telangana, India</p>
                 </div>
               </div>
             </div>

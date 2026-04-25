@@ -35,6 +35,7 @@ export default function CTABanner() {
               <div className="flex flex-wrap gap-2">
                 <span className="trust-badge bg-white/10 border-white/20 text-white text-xs">🌿 Farm to Bottle</span>
                 <span className="trust-badge bg-white/10 border-white/20 text-white text-xs">✅ Pure & Traditional</span>
+                <span className="trust-badge bg-white/10 border-white/20 text-white text-xs">🏡 From Our Village to Your Kitchen</span>
               </div>
               <h2 className="font-serif text-[clamp(1.8rem,4vw,3rem)] font-light text-white leading-tight">
                 Ready to taste the<br />

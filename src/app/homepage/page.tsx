@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import HeroSection from './components/HeroSection';
 import FeaturedProducts from './components/FeaturedProducts';
 import ProcessSection from './components/ProcessSection';
+import FounderStory from './components/FounderStory';
 import WhyChooseUs from './components/WhyChooseUs';
 import TestimonialsSection from './components/TestimonialsSection';
 import CTABanner from './components/CTABanner';
@@ -17,6 +18,7 @@ export default function HomepagePage() {
         <HeroSection />
         <FeaturedProducts />
         <ProcessSection />
+        <FounderStory />
         <WhyChooseUs />
         <TestimonialsSection />
         <CTABanner />
