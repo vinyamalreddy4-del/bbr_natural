@@ -35,7 +35,7 @@ const AppImage = memo(function AppImage({
     fill = false,
     sizes,
     onClick,
-    fallbackSrc = '/assets/images/no_image.png',
+    fallbackSrc = 'https://images.unsplash.com/photo-1599940824399-b87987ced72a?w=800&q=80',
     loading = 'lazy',
     unoptimized = false,
     ...props
