@@ -2,6 +2,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import AppImage from '@/components/ui/AppImage';
 import Icon from '@/components/ui/AppIcon';
+import { getProductImage } from '@/lib/data/imageMap';
 
 interface Testimonial {
   name: string;
@@ -19,53 +20,53 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
 {
-  name: 'Lakshmi Devi',
-  role: 'Homemaker',
-  location: 'Vijayawada, AP',
-  quote: 'I switched to BRR groundnut oil 6 months ago and the difference is night and day. My family noticed the taste immediately — richer, nuttier, more alive. My daughter\'s skin has improved too. I will never go back to refined oil.',
-  shortQuote: 'My family noticed the taste immediately — richer, nuttier, more alive.',
+  name: 'Sridhar Chintala',
+  role: 'Software Engineer',
+  location: 'Hyderabad, TG',
+  quote: 'I switched to BRR groundnut oil 6 months ago and the difference is night and day. My family noticed the taste immediately—richer, nuttier, more alive. My daughter\'s skin has improved too. I will never go back to refined oil.',
+  shortQuote: 'My family noticed the taste immediately—richer, nuttier, more alive.',
   product: 'Cold Pressed Groundnut Oil',
   rating: 5,
-  image: 'https://img.rocket.new/generatedImages/rocket_gen_img_12ea42ac5-1772258592389.png',
-  imageAlt: 'Indian woman smiling warmly in a kitchen, natural lighting, traditional home setting',
+  image: getProductImage('sridhar'),
+  imageAlt: 'Indian man smiling warmly in a kitchen, natural lighting, traditional home setting',
   verified: true,
-  since: 'Customer since 2023'
+  since: 'Customer since 2024'
 },
 {
-  name: 'Dr. Venkata Ramana',
-  role: 'Physician',
-  location: 'Guntur, AP',
-  quote: 'As a doctor, I advise patients to switch to cold pressed oils. BRR Natural is the only local brand I trust completely — genuine cold pressed, no adulteration, no shortcuts. I recommend it to every patient who asks.',
-  shortQuote: 'The only local brand I trust completely — genuine cold pressed, no adulteration.',
+  name: 'Laxman',
+  role: 'Pharmacist',
+  location: 'Hyderabad, TG',
+  quote: 'As a pharmacist, I advise people to switch to cold pressed oils. BRR Natural is the only local brand I trust completely—genuine cold pressed, no adulteration, no shortcuts.',
+  shortQuote: 'The only local brand I trust completely—genuine cold pressed, no adulteration.',
   product: 'Cold Pressed Sesame Oil',
   rating: 5,
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_137fe873c-1763293949877.png",
-  imageAlt: 'Indian male doctor in professional attire, confident expression, clean background',
+  image: getProductImage('laxman'),
+  imageAlt: 'Indian male pharmacist in professional attire, confident expression, clean background',
   verified: true,
   since: 'Customer since 2022'
 },
 {
-  name: 'Sarada Kumari',
-  role: 'Home Cook & Food Blogger',
-  location: 'Hyderabad, TS',
-  quote: 'The turmeric powder is so vibrant — no artificial colour, just pure natural gold. The aroma when it hits hot oil is incredible. My dal tadka has never looked or smelled better. Genuinely traditional.',
+  name: 'Nagaraju',
+  role: 'Software Engineer & Home Cook',
+  location: 'Hyderabad, TG',
+  quote: 'The turmeric powder is so vibrant—no artificial colour, just pure natural gold. The aroma when it hits hot oil is incredible. My dal tadka has never looked or smelled better.',
   shortQuote: 'No artificial colour, just pure natural gold. My dal tadka has never been better.',
   product: 'Pure Turmeric Powder',
   rating: 5,
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_12ea42ac5-1772258592389.png",
-  imageAlt: 'Indian woman smiling warmly, bright natural lighting, traditional kitchen setting',
+  image: getProductImage('nagaraju'),
+  imageAlt: 'Indian man smiling warmly, bright natural lighting, traditional kitchen setting',
   verified: true,
   since: 'Customer since 2023'
 },
 {
-  name: 'Suresh Babu',
-  role: 'Restaurant Owner',
-  location: 'Nellore, AP',
-  quote: 'I use BRR sesame oil in my restaurant. Customers keep asking what makes the food taste different. The answer is always the same — real cold pressed oil from people who actually care about quality.',
+  name: 'Avinash Reddy',
+  role: 'Business Owner',
+  location: 'Warangal, TG',
+  quote: 'I use BRR sesame oil in my restaurant. Customers keep asking what makes the food taste different. The answer is always the same—real cold pressed oil from people who care about quality.',
   shortQuote: 'Customers keep asking what makes the food taste different. The answer is BRR.',
   product: 'Cold Pressed Sesame Oil',
   rating: 5,
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_140d70fac-1763295720370.png",
+  image: getProductImage('avinash'),
   imageAlt: 'Indian restaurant owner smiling, casual professional attire, warm indoor lighting',
   verified: true,
   since: 'Bulk customer since 2022'
@@ -74,15 +75,16 @@ const testimonials: Testimonial[] = [
   name: 'Padma Rao',
   role: 'Nutritionist',
   location: 'Visakhapatnam, AP',
-  quote: 'BRR Natural\'s chilli powder has no added colour — you can see the natural deep red. I recommend it to all my clients who cook Andhra food. Genuinely pure, genuinely traditional. Rare to find this quality.',
+  quote: 'BRR Natural\'s chilli powder has no added colour—you can see the natural deep red. I recommend it to all my clients who cook Andhra food. Genuinely pure, genuinely traditional.',
   shortQuote: 'Rare to find this quality. I recommend it to all my clients who cook Andhra food.',
   product: 'Pure Red Chilli Powder',
   rating: 5,
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_195b896d4-1772076061002.png",
+  image: 'https://img.rocket.new/generatedImages/rocket_gen_img_195b896d4-1772076061002.png',
   imageAlt: 'Indian woman nutritionist, confident smile, clean studio background',
   verified: true,
   since: 'Customer since 2023'
-}];
+}
+];
 
 
 const stats = [
@@ -208,6 +210,7 @@ export default function TestimonialsSection() {
                   <div className="absolute inset-0 rounded-full border-2 border-accent/30 scale-110" />
                   <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-white shadow-xl relative">
                     <AppImage
+                      key={ft.image}
                       src={ft.image}
                       alt={ft.imageAlt}
                       fill

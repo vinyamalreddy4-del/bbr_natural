@@ -53,12 +53,12 @@ export default function ProductCard({
     <div className={`product-card group ${className}`}>
       <Link href={`/products/${product.slug}`} className="block">
         {/* Image Section */}
-        <div className={`relative overflow-hidden rounded-t-[1.25rem] bg-gradient-to-br ${product.colors.gradient} h-48 sm:h-52 lg:h-56`}>
+        <div className={`relative overflow-hidden rounded-t-[1.25rem] bg-gradient-to-br ${product.colors.gradient} aspect-square`}>
           <AppImage
             src={product.images.main}
             alt={product.images.alt}
             fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            className="object-contain p-4 transition-transform duration-500 group-hover:scale-105"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
           

@@ -1,66 +1,71 @@
 // Product Image Mapping System
-// Maps product slugs to appropriate image URLs
-// Using Unsplash images that accurately represent each product type
+// Maps product slugs to local image paths
+// Images should be stored in /public/products/
 
 export const PRODUCT_IMAGE_MAP: Record<string, string> = {
   // Cold Pressed Oils
-  'groundnut-oil': 'https://images.pexels.com/photos/10046940/pexels-photo-10046940.jpeg',
-  'sesame-oil': 'https://images.pexels.com/photos/10398481/pexels-photo-10398481.jpeg?auto=compress&cs=tinysrgb&w=800',
-  'mustard-oil': 'https://images.pexels.com/photos/10048319/pexels-photo-10048319.jpeg',
-  'coconut-oil': 'https://images.pexels.com/photos/11006805/pexels-photo-11006805.jpeg?auto=compress&cs=tinysrgb&w=800&h=800',
-  'sunflower-oil': 'https://plus.unsplash.com/premium_photo-1664391616054-1671f1b7f75d?q=80&w=778&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'groundnut-oil': '/products/groundnut-oils.png',
+  'sesame-oil': '/products/sesame-oil.png',
+  'mustard-oil': '/products/mustard-oil.png',
+  'coconut-oil': '/products/coconut-oil.png',
+  'sunflower-oil': '/products/sunflower-oil.png',
 
   // Spice Powders
-  'chilli-powder': 'https://images.unsplash.com/photo-1607672632458-9eb56696346b?w=800&q=80',
-  'turmeric-powder': 'https://images.unsplash.com/photo-1637217423180-463f1e73f6cd?w=800&q=80',
-  'coriander-powder': 'https://images.pexels.com/photos/7263626/pexels-photo-7263626.jpeg',
-  'cumin-powder': 'https://images.pexels.com/photos/32830296/pexels-photo-32830296.jpeg',
+  'chilli-powder': '/products/chilli-powder.png',
+  'turmeric-powder': '/products/turmeric-powder.png',
+  'coriander-powder': '/products/coriander-powder.png',
+  'cumin-powder': '/products/cumin-powder.png',
 
   // Traditional Powders
-  'sambar-powder': 'https://images.pexels.com/photos/32144895/pexels-photo-32144895.jpeg',
-  'rasam-powder': 'https://images.pexels.com/photos/8110204/pexels-photo-8110204.jpeg',
-  'peanut-chutney-powder': 'https://images.pexels.com/photos/23384626/pexels-photo-23384626.jpeg',
+  'sambar-powder': '/products/sambar-powder.png',
+  'rasam-powder': '/products/rasam-powder.png',
+  'peanut-chutney-powder': '/products/peanut-chutney-powder.png',
 
   // Pantry Staples
-  'jaggery-powder': 'https://images.pexels.com/photos/37234377/pexels-photo-37234377.jpeg',
-  'besan': 'https://images.pexels.com/photos/32144900/pexels-photo-32144900.jpeg',
-  'rice-flour': 'https://images.pexels.com/photos/36617926/pexels-photo-36617926.jpeg',
+  'jaggery-powder': '/products/jaggery-powder.png',
+  'besan': '/products/besan.png',
+  'rice-flour': '/products/rice-flour.png',
 
   // Premium Products
-  'a2-ghee': 'https://images.pexels.com/photos/5471921/pexels-photo-5471921.jpeg',
+  'a2-ghee': '/products/a2-ghee.png',
 
   // Homemade Pickles
-  'mango-pickle': 'https://images.pexels.com/photos/7812134/pexels-photo-7812134.jpeg',
-  'gongura-pickle': 'https://images.pexels.com/photos/5031947/pexels-photo-5031947.jpeg',
-  'lemon-pickle': 'https://images.pexels.com/photos/20080821/pexels-photo-20080821.jpeg',
-  'tomato-pickle': 'https://images.pexels.com/photos/5379435/pexels-photo-5379435.jpeg?auto=compress&cs=tinysrgb&w=800',
+  'mango-pickle': '/products/mango-pickle.png',
+  'gongura-pickle': '/products/gongura-pickle.png',
+  'lemon-pickle': '/products/lemon-pickle.png',
+  'tomato-pickle': '/products/tomato-pickle.png',
 
   // Traditional Foods
-  'murukulu': 'https://images.pexels.com/photos/14288624/pexels-photo-14288624.jpeg?auto=compress&cs=tinysrgb&w=800',
-  'sakinalu': 'https://images.unsplash.com/photo-1709091052718-3cb8a990edfa?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=compress&cs=tinysrgb&w=800',
-  'gyaralu': 'https://images.pexels.com/photos/9834373/pexels-photo-9834373.png',
-  'sathu-pindi': 'https://images.pexels.com/photos/32144900/pexels-photo-32144900.jpeg?auto=compress&cs=tinysrgb&w=800',
+  'murukulu': '/products/murukulu.png',
+  'sakinalu': '/products/sakinalu.png',
+  'gyaralu': '/products/gyaralu.png',
+  'sathu-pindi': '/products/sathu-pindi.png',
 
   // Grains & Natural Staples
-  'unpolished-rice': 'https://images.pexels.com/photos/6103071/pexels-photo-6103071.jpeg',
+  'unpolished-rice': '/products/unpolished-rice.png',
 
   // Village-made Powders
-  'moringa-powder': 'https://images.pexels.com/photos/6104096/pexels-photo-6104096.jpeg',
-  'curry-leaf-powder': 'https://plus.unsplash.com/premium_photo-1671130295843-cd4f9b29c613?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=compress&cs=tinysrgb&w=800',
+  'moringa-powder': '/products/moringa-powder.png',
+  'curry-leaf-powder': '/products/curry-leaf-powder.png',
 
   // Rural Specialties
-  'tamarind': 'https://images.pexels.com/photos/20737581/pexels-photo-20737581.jpeg',
+  'tamarind': '/products/tamarind.png',
 
   // Bundles
-  'starter-spice-combo': 'https://images.pexels.com/photos/31852186/pexels-photo-31852186.jpeg',
-  'healthy-oil-combo': 'https://plus.unsplash.com/premium_photo-1663936756798-ead5c2609856?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  'kitchen-essentials-combo': 'https://images.pexels.com/photos/3737645/pexels-photo-3737645.jpeg',
+  'starter-spice-combo': '/products/starter-spice-combo.png',
+  'healthy-oil-combo': '/products/healthy-oil-combo.png',
+  'kitchen-essentials-combo': '/products/kitchen-essentials-combo.png',
+  'homepage-banner': '/products/homepage.png',
+  'avinash': '/products/avinash.png',
+  'laxman': '/products/laxman.png',
+  'nagaraju': '/products/nagaraju.png',
+  'sridhar': '/products/sridhar.png',
 };
 
 // Helper function to get image URL for a product
 export function getProductImage(slug: string): string {
-  return PRODUCT_IMAGE_MAP[slug] || 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=800&q=80';
+  return PRODUCT_IMAGE_MAP[slug] || '/products/fallback.png';
 }
 
 // Fallback image for products without specific images
-export const FALLBACK_IMAGE = 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=800&q=80';
+export const FALLBACK_IMAGE = '/products/fallback.png';

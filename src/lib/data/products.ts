@@ -1,6 +1,10 @@
 import { Product, Bundle } from '@/types/product';
 import { getProductImage } from './imageMap';
 
+// Keep hardcoded data for seed script only
+// All data access now uses MongoDB for server components
+// Client components use in-memory data
+
 // Cold Pressed Oils
 const coldPressedOils: Product[] = [
   {
@@ -1434,7 +1438,7 @@ const BUNDLES: Bundle[] = [
   }
 ];
 
-// Combine all products
+// Combine all products for in-memory access (client components)
 export const PRODUCTS: Record<string, Product> = {};
 
 [...coldPressedOils, ...spicePowders, ...traditionalPowders, ...pantryStaples, ...premiumProducts, ...homemadePickles, ...traditionalFoods, ...grainsStaples, ...villagePowders, ...ruralSpecialties].forEach(product => {
@@ -1443,6 +1447,7 @@ export const PRODUCTS: Record<string, Product> = {};
 
 export const PRODUCT_IDS = Object.keys(PRODUCTS);
 
+// Synchronous functions for client components (uses in-memory data)
 export function getProductById(id: string): Product | undefined {
   return PRODUCTS[id];
 }

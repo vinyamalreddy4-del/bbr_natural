@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import AppImage from '@/components/ui/AppImage';
 import Icon from '@/components/ui/AppIcon';
+import { getProductImage } from '@/lib/data/imageMap';
 
 const trustBadges = [
 { icon: '🌿', label: 'Chemical Free' },
@@ -118,17 +119,19 @@ export default function HeroSection() {
           </div>
 
           {/* Right: Hero visual */}
-          <div className="lg:col-span-6 xl:col-span-5 relative">
+          <div className="lg:col-span-6 xl:col-span-5 relative order-first lg:order-last">
             <div className="relative animate-float">
               {/* Main image card */}
-              <div className="relative rounded-3xl overflow-hidden border border-border shadow-2xl bg-muted aspect-[4/5] max-w-xs sm:max-w-sm mx-auto lg:mx-0 lg:ml-auto">
+              <div className="relative rounded-3xl overflow-hidden border border-border shadow-2xl bg-muted aspect-[4/5] w-full max-w-[280px] sm:max-w-xs md:max-w-sm mx-auto lg:mx-0 lg:ml-auto">
                 <AppImage
-                  src="https://img.rocket.new/generatedImages/rocket_gen_img_194f3147a-1772072435775.png"
+                  src={getProductImage('homepage-banner')}
                   alt="Golden cold pressed oil poured from a traditional wooden press, warm amber color, natural lighting"
                   fill
                   className="object-cover"
                   priority
-                  sizes="(max-width: 768px) 100vw, 40vw" />
+                  sizes="(max-width: 640px) 280px, (max-width: 768px) 320px, (max-width: 1024px) 384px, 40vw"
+                  unoptimized={true}
+                />
 
                 {/* Scrim */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
