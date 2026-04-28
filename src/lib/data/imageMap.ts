@@ -57,7 +57,7 @@ export const PRODUCT_IMAGE_MAP: Record<string, string> = {
   'kitchen-essentials-combo': '/products/kitchen-essentials-combo.png',
   'homepage-banner': '/products/homepage.png',
   'avinash': '/products/avinash.png',
-  'laxman': '/products/laxman.png',
+  'laxman': '/products/Laxman.png',
   'nagaraju': '/products/nagaraju.png',
   'sridhar': '/products/sridhar.png',
 };
