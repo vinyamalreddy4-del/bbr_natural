@@ -4,7 +4,7 @@
 
 export const PRODUCT_IMAGE_MAP: Record<string, string> = {
   // Cold Pressed Oils
-  'groundnut-oil': '/products/groundnut-oils.png',
+  'groundnut-oil': '/products/groundnut-oil.png',
   'sesame-oil': '/products/sesame-oil.png',
   'mustard-oil': '/products/mustard-oil.png',
   'coconut-oil': '/products/coconut-oil.png',
